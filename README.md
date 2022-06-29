@@ -17,12 +17,5 @@ CREATE TABLE IF NOT EXISTS `images` (
 ```
 Put your database credentials in config.php
 
-Protect your logfile with .htaccess
-```.htaccess
-<FilesMatch "\.(log)$">
-deny from all
-</FilesMatch>
-```
-
 # use
 Call the api and provide one of the following services: upload (+provide filetype csv), getallMetaData or getImageById.
