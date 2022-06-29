@@ -28,7 +28,7 @@ class requestHandler
       }
       if($mode == 'Production')
       {
-        file_put_contents('imagesApi.log', $t->getFile().' '.$t->getLine().' '. $t->getMessage()."\n", FILE_APPEND);
+        file_put_contents('Logs/imagesApi.log', $t->getFile().' '.$t->getLine().' '. $t->getMessage()."\n", FILE_APPEND);
         $this->response->setErrorMessage('Service could not be provided for. We are sorry.');
       }
     }finally
